@@ -647,8 +647,7 @@ function searchTotoz() {
     var totoz = document.getElementById('totoz-search').value;
     if (!totoz) { return; }
     //document.getElementById('totoz-status').src = "img/wait.gif";
-    var url = settings.value('totoz_server') + "search.xml{question}terms=" + escape(totoz); // + "{amp}xml=true";
-
+    var url = settings.value('totoz_server') + "search.xml{question}terms=" + encodeURI(escape(totoz)); // + "{amp}xml=true";
     $.get('backend.php?url='+url, function(data, status, xhr){
         displayTotoz(xhr.responseText);
     }, "xml")
