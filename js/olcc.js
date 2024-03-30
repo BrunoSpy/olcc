@@ -669,7 +669,7 @@ function displayTotoz(res) {
         totozbody = $('<tbody></tbody>');
         totozwrap.append(totozbody);
         var server = settings.value('totoz_server');
-        for (var i=totozNodes.length; i--;) {
+        for (var i=0; i<totozNodes.length; ++i) {
             var curtotoz = getNodeText(totozNodes[i]);
             var totoz = "[:"+curtotoz+"]";
             var tr = $('<tr data-totoz="'+totoz+' " class="totoz-result"></tr>');
