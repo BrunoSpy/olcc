@@ -20,8 +20,8 @@ lo.slip = SLIP_TAGS_RAW; // Protection temporaire
 GlobalBoards['comptoir'] = lo;
 
 var dlfp = new Board('dlfp', false);
-dlfp.getUrl = 'http://linuxfr.org/board/index.xml';
-dlfp.postUrl = 'http://linuxfr.org/board';
+dlfp.getUrl = 'https://linuxfr.org/board/index.xml';
+dlfp.postUrl = 'https://linuxfr.org/board';
 dlfp.postData = "board[message]=%m";
 dlfp.alias = "linuxfr,beyrouth,passite,dapassite";
 dlfp.cookie = 'linuxfr.org_session=';
@@ -49,8 +49,8 @@ gabu.slip = SLIP_TAGS_RAW;
 GlobalBoards['gabuzomeu'] = gabu;
 
 var moules = new Board('moules', false);
-moules.getUrl = 'http://moules.org/board/backend/xml';
-moules.postUrl = 'http://moules.org/board/add.php';
+moules.getUrl = 'https://moules.org/board/backend/xml';
+moules.postUrl = 'https://moules.org/board/add.php';
 moules.color = '#ffe3c9';
 moules.slip = SLIP_TAGS_RAW;
 GlobalBoards['moules'] = moules;
